@@ -17,7 +17,7 @@ export default class MarvelServices {
 	}
 
 	getCharacter = (id) => {
-		return this.getData(`${this._apiBase}${id}?${this._apiKey}`);
+		return this.getData(`${this._apiBase}characters/${id}?${this._apiKey}`);
 	}
 
 }
